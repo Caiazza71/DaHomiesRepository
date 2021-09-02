@@ -26,7 +26,6 @@ public class game {
             player_counter = 0;
             computer_counter = 0;
             for (int x = 0; x < 3; x++) {
-                // adder = a*3;
                 int spot = a + (3 * x);
                 if (board.get(spot) == "X") {
                     player_counter += 1;
@@ -66,7 +65,23 @@ public class game {
         }
 
         // looking for the diagonal wins
+        if (board.get(0) == "X" & board.get(4) == "X" & board.get(8) == "X") {
+            System.out.println("You Win!");
+            return true;
+        }
+        if (board.get(2) == "X" & board.get(4) == "X" & board.get(6) == "X") {
+            System.out.println("You Win!");
+            return true;
+        }
 
+        if (board.get(0) == "O" & board.get(4) == "O" & board.get(8) == "O") {
+            System.out.println("The Computer Wins!");
+            return true;
+        }
+        if (board.get(2) == "O" & board.get(4) == "O" & board.get(6) == "O") {
+            System.out.println("The Computer Wins!");
+            return true;
+        }
         // return if nothing happens
         return false;
     }
