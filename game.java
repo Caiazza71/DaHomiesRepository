@@ -152,6 +152,7 @@ public class game {
             turn_counter += 1;
             print_board(board);
             if (check_for_win(board) | (turn_counter > 9)) {
+                Thread.sleep(5000);
                 break;
             }
         }
