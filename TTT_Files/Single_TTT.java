@@ -6,7 +6,7 @@ import java.util.Scanner;
 // 3 4 5
 // 6 7 8
 
-public class game {
+public class Single_TTT {
     // globals
     static int player_move = -1;
     static int computer_move = -1;
